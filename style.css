@@ -1,0 +1,222 @@
+/* ========================= */
+/* TABLE CSS */
+/* ========================= */
+
+.check-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+.check-table th{
+  background:#14324a;
+  color:white;
+  padding:12px;
+  border:1px solid #ccc;
+}
+
+.check-table td{
+  border:1px solid #ccc;
+  padding:12px;
+  text-align:center;
+}
+
+.check-table input{
+  width:100%;
+  padding:8px;
+}
+
+.check-table select{
+  padding:8px;
+}/* ========================= */
+/* style.css */
+/* ========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f2f2f2;
+}
+
+/* LOGIN PAGE */
+
+.main-box{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.main-box::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+
+  background-image:url('https://www.mahle.com/global/media/cal_images/bild1_36bdbbdb233ac5c0c1257871005ae85e.jpg');
+
+  background-size:cover;
+  background-position:center;
+
+  filter:brightness(35%);
+
+  z-index:-1;
+}
+
+/* FORM */
+
+.form-box{
+  width:350px;
+  padding:35px;
+  border-radius:15px;
+
+  background:rgba(255,255,255,0.15);
+
+  backdrop-filter:blur(10px);
+
+  color:white;
+
+  box-shadow:0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.form-box h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.form-box input{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border:none;
+  border-radius:6px;
+}
+
+.form-box button{
+  width:100%;
+  padding:12px;
+  margin-top:20px;
+  border:none;
+  border-radius:6px;
+  background:#14324a;
+  color:white;
+  cursor:pointer;
+}
+
+.form-box p{
+  margin-top:15px;
+  text-align:center;
+}
+
+.form-box a{
+  color:#00bfff;
+  cursor:pointer;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+  display:none;
+}
+
+.topbar{
+  width:100%;
+  padding:18px;
+  background:#14324a;
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.navbar{
+  background:#1f4f75;
+  padding:15px;
+}
+
+.navbar button{
+  background:none;
+  border:none;
+  color:white;
+  margin-right:20px;
+  cursor:pointer;
+}
+
+.logout-btn{
+  float:right;
+  padding:8px 15px;
+  background:red !important;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.content{
+  padding:30px;
+}
+
+.box{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.section-btn{
+  width:250px;
+  padding:15px;
+  margin-top:20px;
+  border:none;
+  border-radius:8px;
+  background:#14324a;
+  color:white;
+  cursor:pointer;
+  display:block;
+}
+
+.back-btn{
+  padding:10px 20px;
+  margin-bottom:20px;
+  background:#444;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* TABLE */
+
+.check-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+.check-table th{
+  background:#14324a;
+  color:white;
+  padding:12px;
+  border:1px solid #ccc;
+}
+
+.check-table td{
+  border:1px solid #ccc;
+  padding:12px;
+  text-align:center;
+}
+
+.check-table input{
+  width:100%;
+  padding:8px;
+}
+
+.check-table select{
+  padding:8px;
+}

@@ -1,0 +1,298 @@
+<!-- ========================= -->
+<!-- index.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MAHLE Dashboard</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- LOGIN PAGE -->
+
+  <div class="main-box" id="loginPage">
+
+    <div class="form-box">
+
+      <h2>Login</h2>
+
+      <input type="email" id="loginEmail" placeholder="Enter Email">
+
+      <input type="password" id="loginPass" placeholder="Enter Password">
+
+      <button onclick="login()">
+        Login
+      </button>
+
+      <p>
+        Don't have account?
+        <a onclick="showRegister()">Register</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- REGISTER PAGE -->
+
+  <div class="main-box" id="registerPage" style="display:none;">
+
+    <div class="form-box">
+
+      <h2>Register</h2>
+
+      <input type="text" id="regUser" placeholder="Enter Username">
+
+      <input type="email" id="regEmail" placeholder="Enter Email">
+
+      <input type="password" id="regPass" placeholder="Enter Password">
+
+      <button onclick="register()">
+        Register
+      </button>
+
+      <p>
+        Already have account?
+        <a onclick="showLogin()">Login</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- DASHBOARD -->
+
+  <div class="dashboard" id="dashboardPage">
+
+    <div class="topbar">
+
+      MAHLE - Digital Check Sheet
+
+      <button class="logout-btn" onclick="logout()">
+        Logout
+      </button>
+
+    </div>
+
+    <div class="navbar">
+
+      <button>
+        Home
+      </button>
+
+      <button onclick="openHitter()">
+        Hitter Line
+      </button>
+
+    </div>
+
+    <div class="content">
+
+      <div class="box">
+
+        <h2>Welcome to MAHLE Dashboard</h2>
+
+        <p style="margin-top:15px;">
+          Click Hitter Line Section
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- HITTER PAGE -->
+
+  <div class="dashboard" id="hitterPage">
+
+    <div class="topbar">
+
+      MAHLE - Hitter Line
+
+      <button class="logout-btn" onclick="logout()">
+        Logout
+      </button>
+
+    </div>
+
+    <div class="content">
+
+      <button class="back-btn" onclick="goDashboard()">
+        ← Back
+      </button>
+
+      <div class="box">
+
+        <h2>Hitter Line</h2>
+
+        <button class="section-btn" onclick="openCoreBuilder()">
+          Core Builder Startup
+        </button>
+
+        <button class="section-btn" onclick="openFinMachine()">
+          Fin Machine Startup
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CORE BUILDER PAGE -->
+
+  <div class="dashboard" id="coreBuilderPage">
+
+    <div class="topbar">
+
+      MAHLE - Core Builder Startup
+
+      <button class="logout-btn" onclick="logout()">
+        Logout
+      </button>
+
+    </div>
+
+    <div class="content">
+
+      <button class="back-btn" onclick="backToHitter()">
+        ← Back
+      </button>
+
+      <div class="box">
+
+        <h2>Core Builder Startup Check Sheet</h2>
+
+        <table class="check-table">
+
+          <tr>
+            <th>Sr No.</th>
+            <th>Check Point</th>
+            <th>Status</th>
+            <th>Remark</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Air Pressure Check</td>
+            <td>
+              <select>
+                <option>OK</option>
+                <option>NOT OK</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" placeholder="Remark">
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Coolant Level</td>
+            <td>
+              <select>
+                <option>OK</option>
+                <option>NOT OK</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" placeholder="Remark">
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FIN MACHINE PAGE -->
+
+  <div class="dashboard" id="finMachinePage">
+
+    <div class="topbar">
+
+      MAHLE - Fin Machine Startup
+
+      <button class="logout-btn" onclick="logout()">
+        Logout
+      </button>
+
+    </div>
+
+    <div class="content">
+
+      <button class="back-btn" onclick="backToHitterFromFin()">
+        ← Back
+      </button>
+
+      <div class="box">
+
+        <h2>Fin Machine Startup Check Sheet</h2>
+
+        <table class="check-table">
+
+          <tr>
+            <th>Sr No.</th>
+            <th>Check Point</th>
+            <th>Status</th>
+            <th>Remark</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Sensor Working</td>
+            <td>
+              <select>
+                <option>OK</option>
+                <option>NOT OK</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" placeholder="Remark">
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Motor Condition</td>
+            <td>
+              <select>
+                <option>OK</option>
+                <option>NOT OK</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" placeholder="Remark">
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS LINK -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
